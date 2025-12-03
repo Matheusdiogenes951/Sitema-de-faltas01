@@ -1,9 +1,9 @@
 :root {
-  --bg: #f0f7f2;
+  --bg: #e8f4ed;
   --card: #ffffff;
-  --accent: #2e8b57; /* verde mar */
-  --accent-2: #3cb371; /* verde médio */
-  --muted: #477a5a;
+  --accent: #1b5e35;
+  --accent-2: #2d7f4d;
+  --muted: #3a5f47;
   --danger: #c94b4b;
 }
 * {
@@ -30,7 +30,7 @@ header {
   border-radius: 12px;
   max-width: 900px;
   margin: 18px auto;
-  box-shadow: 0 6px 18px rgba(46, 139, 87, 0.08);
+  box-shadow: 0 6px 18px rgba(27, 94, 53, 0.08);
 }
 .small {
   font-size: 13px;
@@ -385,11 +385,11 @@ button {
   font-size: 16px;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 12px rgba(46, 139, 87, 0.25);
+  box-shadow: 0 4px 12px rgba(27, 94, 53, 0.25);
 }
 .btn-hero:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 16px rgba(46, 139, 87, 0.35);
+  box-shadow: 0 6px 16px rgba(27, 94, 53, 0.35);
 }
 
 /* Footer */
@@ -584,7 +584,7 @@ footer.footer {
 }
 .btn:hover, .btn-hero:hover, .logout-btn:hover, .del-btn:hover {
   transform: translateY(-3px);
-  box-shadow: 0 8px 20px rgba(27,94,53,0.10);
+  box-shadow: 0 8px 20px rgba(27, 94, 53, 0.10);
 }
 
 .menu-item {
@@ -613,7 +613,7 @@ footer.footer {
 
 input:focus, select:focus {
   outline: none;
-  box-shadow: 0 8px 28px rgba(46,139,87,0.08);
+  box-shadow: 0 8px 28px rgba(27, 94, 53, 0.08);
   border-color: #2d7f4d;
 }
 
