@@ -226,10 +226,21 @@ function initPages() {
     dashboardUserInfo.textContent = '👤 ' + lu.username + '\n\n' + (lu.role === 'coord' ? '🔑 Coordenação' : '👨‍🏫 Professor');
   }
 
-  // mostrar usuário no sidebar (alunos/faltas pages)
+  // mostrar usuário no sidebar (alunos/faltas pages) - com emojis
   var sidebarUser = document.getElementById('sidebarUserInfo');
   if (sidebarUser && lu) {
-    sidebarUser.textContent = 'Olá, ' + lu.username + '\n(' + lu.role + ')';
+    sidebarUser.textContent = '👤 ' + lu.username + '\n\n' + (lu.role === 'coord' ? '🔑 Coordenação' : '👨‍🏫 Professor');
+  }
+
+  // marca o menu-item ativo conforme a página (para todas as páginas)
+  var currentPage = window.location.pathname;
+  var allMenuItems = document.querySelectorAll('.menu-item');
+  for (var m = 0; m < allMenuItems.length; m++) {
+    allMenuItems[m].classList.remove('active');
+    var mhref = allMenuItems[m].getAttribute('href');
+    if (currentPage.indexOf(mhref) !== -1) {
+      allMenuItems[m].classList.add('active');
+    }
   }
 
   // mostrar usuário em header (legacy)
