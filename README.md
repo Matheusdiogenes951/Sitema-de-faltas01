@@ -30,7 +30,6 @@ Se estiver publicado no GitHub Pages:
 
 👉 https://matheusdiogenes951.github.io/Sitema-de-faltas01/
 
-*(caso não esteja, pode remover essa parte)*
 
 ---
 
