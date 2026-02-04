@@ -8,7 +8,7 @@ Principais pontos
 - Funções principais expostas no `assets/app.js` (nomes simples solicitados).
 
 Páginas
-- `index.html` — página inicial com informações da escola e botão de acesso
+- `index.html` — página inicial cosm informações da escola e botão de acesso
 - `login.html` — tela de login (usuários fixos para teste)
 - `dashboard.html` — resumo, total de alunos e faltas
 - `alunos.html` — listar, buscar, filtrar por turma e adicionar (somente coordenação)

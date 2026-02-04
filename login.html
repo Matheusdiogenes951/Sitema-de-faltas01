@@ -8,25 +8,26 @@
 </head>
 <body>
     <main>
-        <section>
-            <div id="Form">
-                <p>Seja bem vindo!</p>
+        <section id="login">
+            <div id="formulario">
+                <h1>Seja bem-vindo!</h1>
+                <p>Faça login para acessar o sistema de faltas</p>
+
                 <form action="dashboard.html" method="post">
                     <div class="campo">
-                        <label for="iemail">Email: </label>
-                        <input type="email" name="email" id="iemail" placeholder="Seu Login Aqui" required>
+                        <label for="iemail">Email</label>
+                        <input type="email" name="email" id="iemail" placeholder="Seu email" required>
                     </div>
+
                     <div class="campo">
-                        <label for="isenha">Senha: </label>
-                        <input type="password" name="senha" id="isenha" placeholder="Sua Senha Aqui" required minlength="8" >
-                        
-
+                        <label for="isenha">Senha</label>
+                        <input type="password" name="senha" id="isenha" placeholder="Sua senha" required minlength="8">
                     </div>
-                    <input type="submit" value="Entrar">
-                    
-                </form>
-                <a href="index.html"><input type="submit" value="Voltar"></a>
 
+                    <input type="submit" value="Entrar">
+                </form>
+
+                <a href="index.html" class="btn-voltar">Voltar</a>
             </div>
         </section>
     </main>
