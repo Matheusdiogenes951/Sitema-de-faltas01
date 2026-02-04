@@ -23,7 +23,7 @@
                         <label for="isenha">Senha</label>
                         <input type="password" name="senha" id="isenha" placeholder="Sua senha" required minlength="8">
                     </div>
-                    
+
                     <button type="submit" onclick="entrar()">Entrar</button>
                 </form>
 
@@ -33,8 +33,8 @@
     </main>
     <script>
         function entrar() {
-            location.href = "dashboard.html";
-
+            const iemail = document.getElementById("iemail").value;
+            const isenha = document.getElementById("isenha").value;
         }
     </script>
 </body>
