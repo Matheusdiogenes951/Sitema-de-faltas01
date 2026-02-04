@@ -24,6 +24,16 @@ Como usar
 3. Faça login com uma das contas de teste.
 4. Navegue entre Dashboard, Alunos e Faltas.
 
+## 🌍 Demonstração
+
+Se estiver publicado no GitHub Pages:
+
+👉 https://matheusdiogenes951.github.io/Sitema-de-faltas01/
+
+*(caso não esteja, pode remover essa parte)*
+
+---
+
 Observações de implementação
 - Turmas aceitas: `DS 1`, `DS 2`, `DS 3`, `CTB 1`, `CTB 2`, `CTB 3`, `MULT 1`, `MULT 2`, `MULT 3`.
   - Abreviações como `ds1`, `DS1`, `ds 1` são normalizadas.
