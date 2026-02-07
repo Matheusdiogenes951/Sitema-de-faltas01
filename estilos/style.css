@@ -27,15 +27,53 @@ body {
 
 /* ================== INDEX ================== */
 
-h1 {
-    font-size: 90px;
+body.index-html {
+    background: radial-gradient(circle at top left, rgba(20, 163, 37, 0.18), transparent 45%),
+                radial-gradient(circle at 80% 10%, rgba(15, 122, 26, 0.2), transparent 40%),
+                linear-gradient(135deg, #f0faf2, #ffffff);
+    color: var(--ink);
 }
 
-#buttom_i {
-    display: flex;
-    justify-content: center;
+#Central {
+    min-height: 80vh;
+    display: grid;
+    place-items: center;
+    padding: 40px 20px;
+}
+
+.hero {
+    max-width: 720px;
+    text-align: center;
+    background: white;
+    padding: 50px 40px;
+    border-radius: 28px;
+    box-shadow: var(--shadow-2);
+}
+
+.hero h1 {
+    font-size: clamp(36px, 6vw, 72px);
+    margin: 12px 0 10px 0;
+    color: var(--brand-900);
+}
+
+.hero p {
+    color: var(--muted);
+    font-size: 18px;
+    margin-bottom: 28px;
+}
+
+.hero-badge {
+    display: inline-flex;
     align-items: center;
-    height: 60vh;
+    gap: 8px;
+    background: rgba(15, 122, 26, 0.12);
+    color: var(--brand-700);
+    padding: 6px 14px;
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
 }
 
 .btn-acessar {
@@ -43,8 +81,8 @@ h1 {
     background: linear-gradient(135deg, var(--brand-700), var(--brand-500));
     color: white;
     padding: 18px 40px;
-    font-size: 20px;
-    font-weight: bold;
+    font-size: 18px;
+    font-weight: 700;
     border-radius: 12px;
     box-shadow: var(--shadow-1);
     transition: 0.3s;
@@ -58,23 +96,51 @@ h1 {
 /* ================== FOOTER ================== */
 
 #footer {
-    font-size: small;
-    background-color: var(--brand-700);
+    font-size: 14px;
+    background: linear-gradient(135deg, var(--brand-900), var(--brand-700));
     color: white;
-    padding: 20px;
-    position: fixed;
-    bottom: 0;
-    width: 100vw;
+    padding: 28px 20px;
+    width: 100%;
+    margin-top: 20px;
 }
 
-#footer a {
+.footer-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 16px;
+}
+
+.footer-links a {
     text-decoration: none;
     color: white;
+    font-weight: 600;
 }
 
-#footer p {
+.footer-links a:hover {
+    color: var(--accent);
+}
+
+.footer-subtitle {
+    margin: 6px 0 0 0;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.footer-copy {
     text-align: center;
-    margin-top: 30px;
+    margin-top: 20px;
+    color: rgba(255, 255, 255, 0.8);
 }
 
 /* ================== LOGIN ================== */
