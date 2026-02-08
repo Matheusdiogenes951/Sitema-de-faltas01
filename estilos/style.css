@@ -16,6 +16,18 @@
 
 /* ================== BASE ================== */
 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+}
+
 body {
     font-family: "Manrope", "Segoe UI", sans-serif;
     font-size: 20px;
@@ -32,13 +44,17 @@ body.index-html {
                 radial-gradient(circle at 80% 10%, rgba(15, 122, 26, 0.2), transparent 40%),
                 linear-gradient(135deg, #f0faf2, #ffffff);
     color: var(--ink);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 #Central {
-    min-height: 80vh;
+    min-height: 60vh;
     display: grid;
     place-items: center;
     padding: 40px 20px;
+    flex: 1;
 }
 
 .hero {
@@ -150,18 +166,26 @@ body#login-html {
                 radial-gradient(circle at 10% 20%, rgba(15, 122, 26, 0.2), transparent 40%),
                 linear-gradient(135deg, #e8f6ea, #fdfefd);
     color: var(--ink);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+body#login-html main {
+    flex: 1;
+    display: grid;
+    place-items: center;
+    padding: 24px;
 }
 
 section#login {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: clamp(320px, 70vw, 520px);
+    position: relative;
+    width: min(92vw, 520px);
     padding: 28px 30px;
     background-color: var(--surface);
     border-radius: 22px;
     box-shadow: var(--shadow-2);
-    transform: translate(-50%, -50%);
+    transform: none;
 }
 
 #formulario h1 {
@@ -237,6 +261,8 @@ form input[type=submit]:hover {
 body.dashboard-html {
     display: flex;
     background-color: #f4f6f8;
+    min-height: 100vh;
+    width: 100%;
 }
 
 /* ---------- SIDEBAR ---------- */
@@ -598,6 +624,8 @@ body.dashboard-html {
     margin-left: 0;
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
 }
 
 /* ---------- TOPBAR ---------- */
@@ -642,6 +670,7 @@ body.dashboard-html {
 .dashboard-container {
     padding: 40px;
     text-align: center;
+    flex: 1;
 }
 
 .card {
@@ -649,5 +678,93 @@ body.dashboard-html {
     padding: 30px;
     border-radius: 15px;
     box-shadow: var(--shadow-1);
-    display: inline-block;
+    display: block;
+    width: min(100%, 1100px);
+    margin: 0 auto;
+}
+
+/* ================== RESPONSIVO ================== */
+
+@media (max-width: 900px) {
+    body {
+        font-size: 18px;
+    }
+
+    .hero {
+        padding: 36px 26px;
+    }
+
+    .topbar {
+        padding: 14px 20px;
+        gap: 12px;
+    }
+
+    .topbar h1 {
+        font-size: 22px;
+    }
+
+    .dashboard-container {
+        padding: 24px;
+    }
+
+    .card {
+        padding: 22px;
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        font-size: 16px;
+    }
+
+    .hero {
+        padding: 28px 20px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .btn-acessar {
+        width: 100%;
+        display: inline-block;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .sidebar {
+        width: min(80vw, 260px);
+    }
+
+    .topbar {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .topbar h1 {
+        width: 100%;
+        text-align: left;
+        font-size: 20px;
+    }
+
+    .dashboard-container {
+        padding: 18px;
+    }
+
+    .card {
+        padding: 18px;
+    }
+
+    .card-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .queue-list li {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
 }
