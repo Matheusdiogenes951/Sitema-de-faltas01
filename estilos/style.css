@@ -768,3 +768,33 @@ body.dashboard-html {
         gap: 8px;
     }
 }
+
+/* Desktop layout: keep sidebar visible and shift main content */
+@media (min-width: 900px) {
+    .sidebar {
+        transform: translateX(0);
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+        position: fixed;
+    }
+
+    .sidebar-close {
+        display: none;
+    }
+
+    .main-content {
+        margin-left: clamp(150px, 20vw, 200px);
+    }
+
+    .topbar {
+        position: fixed;
+        left: clamp(150px, 20vw, 200px);
+        right: 0;
+        z-index: 400;
+    }
+
+    .dashboard-container {
+        padding-top: 80px;
+    }
+}
