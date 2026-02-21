@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const isenha = document.getElementById('isenha').value;
 
         if (iemail === 'adm@gmail.com' && isenha === '12345') {
-            alert('Bem-vindo, Administrador!');
+            alert('Bem-vindo!!!');
             location.href = 'dashboard.html';
         } else {
             alert('Email ou senha incorretos!');
