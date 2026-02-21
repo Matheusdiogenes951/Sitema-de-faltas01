@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
             alert('Bem-vindo!!!');
             location.href = 'dashboard.html';
         } else {
-            alert('Email ou senha incorretos!');
+            alert('Email ou senha incorretos!, tente novamente.');
         }
     }
 
